@@ -2,6 +2,11 @@
 
 Este proyecto se basa en el desarrollo de una BD NoSQL, usando para ello Firebase y Angular, que tiene como tema el desarrollo de una aplicación que detalla sobre los datos de la fauna y flora presente en el territorio nacional, detallando su nombre, estado de conservación y otros aspectos.
 
+#Notas:
+
+-Framework Front-end usado: Bootstrap
+-Tipo de DB de Firebase usado: RealTime Database
+
 -----------------------------------------------------------------------------------------------------------------------------------
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.7.3.
