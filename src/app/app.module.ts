@@ -2,6 +2,8 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { AppComponent } from './app.component';
 
+import { FormsModule } from '@angular/forms';
+
 //Imports para usar Firestore:
 //import { AngularFirestoreModule } from 'angularfire2/firestore';
 //import { AngularFireModule } from 'angularfire2';
@@ -15,11 +17,18 @@ import { environment } from '../environments/environment';
 
 //Import de los Componentes (components):
 import { DatosComponent } from './components/datos/datos.component';
-import { ListaFaunaFloraComponent } from './components/datos/lista-fauna-flora/lista-fauna-flora.component';
-import { FaunaFloraComponent } from './components/datos/fauna-flora/fauna-flora.component';
+import { FaunaListComponent } from './components/datos/fauna-list/fauna-list.component';
+import { FloraListComponent } from './components/datos/flora-list/flora-list.component';
+import { FaunaComponent } from './components/datos/fauna/fauna.component';
+import { FloraComponent } from './components/datos/flora/flora.component';
 
-//Import de los Servicios (services);
-import { FaunaFloraService } from './services/fauna-flora.service';
+//Import de los Servicios (services):
+import { FaunaService } from './services/fauna.service';
+import { FloraService } from './services/flora.service';
+
+//Import del Toastr:
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { ToastrModule } from 'ngx-toastr';
 
 
 @NgModule({
@@ -27,8 +36,10 @@ import { FaunaFloraService } from './services/fauna-flora.service';
   [
     AppComponent,
     DatosComponent,
-    ListaFaunaFloraComponent,
-    FaunaFloraComponent
+    FaunaComponent,
+    FloraComponent,
+    FaunaListComponent,
+    FloraListComponent
   ],
   imports: 
   [
@@ -36,13 +47,17 @@ import { FaunaFloraService } from './services/fauna-flora.service';
 
     //Para RealTime DB:
     AngularFireDatabaseModule,
-    AngularFireModule.initializeApp(environment.firebase)
+    AngularFireModule.initializeApp(environment.firebase),
+	   FormsModule,
+    ToastrModule.forRoot(),
+    BrowserAnimationsModule
 
     //Para Firestore:
     //AngularFireModule.initializeApp(environment.firebase, 'angular-fs'),
     //AngularFirestoreModule
   ],
-  providers: [FaunaFloraService],
+  providers: [FaunaService, FloraService],
   bootstrap: [AppComponent]
 })
+
 export class AppModule { }

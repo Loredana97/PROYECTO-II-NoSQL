@@ -5,7 +5,8 @@
 
 export const environment = {
   production: false,
-  //Se conecta con la base de datos hecha en Firebase
+
+  //Se conecta con la base de datos Realtime hecha en Firebase:
   firebase: {
     apiKey: "AIzaSyDbfn_hdvvMu46afLwJrF6SUmBJK4YZexg",
     authDomain: "aechmea-flora-y-fauna-de-vzla.firebaseapp.com",

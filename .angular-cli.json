@@ -1,5 +1,5 @@
 {
-  "$schema": "./node_modules/@angular/cli/lib/config/schema.json",
+"$schema": "./node_modules/@angular/cli/lib/config/schema.json",
   "project": {
     "name": "proyecto-ii-aechmea"
   },
@@ -19,7 +19,8 @@
       "testTsconfig": "tsconfig.spec.json",
       "prefix": "app",
       "styles": [
-        "styles.css"
+        "styles.css",
+        "../node_modules/ngx-toastr/toastr.css"
       ],
       "scripts": [],
       "environmentSource": "environments/environment.ts",
@@ -58,3 +59,4 @@
     "component": {}
   }
 }
+

@@ -1,0 +1,114 @@
+<div class="card mt-5">
+  <div class="card-body">
+  	<h3 class="font-weight-bold">Flora</h3>
+  	<hr style="color: #0056b2;" />
+  	<h5>-Datos Generales-</h5>
+      <form #floraForm="ngForm" (ngSubmit)="onSubmit(floraForm)">
+          <!-- Para actualizar los campos de una planta -->
+          <input type="hidden" name="$key" #$key="ngModel" [(ngModel)]="floraService.selectedFlora.$key">
+
+          <div class="form-group">
+            <input  disabled
+              typeblock="null"
+              class="form-control"
+              name="foto"
+              #foto="ngModel"
+              [(ngModel)]="floraService.selectedFlora.foto"
+              placeholder="Foto de la planta"
+              >
+          </div>
+
+          <div class="form-group">
+            <input 
+              type="text"
+              class="form-control"
+              name="nombre"
+              #nombre="ngModel"
+              [(ngModel)]="floraService.selectedFlora.nombre"
+              placeholder="Añade el nombre de la planta"
+              >
+          </div>
+          <div class="form-group">
+            <input 
+              type="text"
+              class="form-control"
+              name="bioma"
+              #bioma="ngModel"
+              [(ngModel)]="floraService.selectedFlora.bioma"
+              placeholder="Añade el biomedio de la planta"
+              >
+          </div>
+          <div class="form-group">
+              <input 
+                type="text"
+                class="form-control"
+                name="estado"
+                #estado="ngModel"
+                [(ngModel)]="floraService.selectedFlora.estado"
+                placeholder="Añade el estado de conservación"
+                >
+          </div>
+          <hr style="color: #0056b2;" />
+          <h5>-Datos Etimológicos-</h5>
+          <div class="form-group">
+              <input 
+                type="text"
+                class="form-control"
+                name="clase"
+                #clase="ngModel"
+                [(ngModel)]="floraService.selectedFlora.clase"
+                placeholder="Añade la Clase"
+                >
+          </div>
+          <div class="form-group">
+              <input 
+                type="text"
+                class="form-control"
+                name="orden"
+                #orden="ngModel"
+                [(ngModel)]="floraService.selectedFlora.orden"
+                placeholder="Añade el Orden"
+                >
+          </div>
+          <div class="form-group">
+              <input 
+                type="text"
+                class="form-control"
+                name="familia"
+                #familia="ngModel"
+                [(ngModel)]="floraService.selectedFlora.familia"
+                placeholder="Añade la Familia"
+                >
+          </div>
+          <div class="form-group">
+              <input 
+                type="text"
+                class="form-control"
+                name="genero"
+                #genero="ngModel"
+                [(ngModel)]="floraService.selectedFlora.genero"
+                placeholder="Añade el Género"
+                >
+          </div> 
+          <div class="form-group">
+              <input 
+                type="text"
+                class="form-control"
+                name="especie"
+                #especie="ngModel"
+                [(ngModel)]="floraService.selectedFlora.especie"
+                placeholder="Añade la Especie"
+                >
+          </div>
+
+          <div class="form-group">
+            <button class="btn btn-primary" type="submit">
+                <i class="fas fa-plus-circle"></i> Añade una Planta
+            </button>
+            <button class="btn btn-secondary" type="reset" (click)="resetForm(floraForm)">
+                <i class="fas fa-sync-alt"></i> Reiniciar
+            </button>
+          </div>
+        </form>
+  </div>
+</div>

@@ -1,20 +1,20 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { FaunaFloraComponent } from './fauna-flora.component';
+import { FaunaListComponent } from './fauna-list.component';
 
-describe('FaunaFloraComponent', () => {
-  let component: FaunaFloraComponent;
-  let fixture: ComponentFixture<FaunaFloraComponent>;
+describe('FaunaListComponent', () => {
+  let component: FaunaListComponent;
+  let fixture: ComponentFixture<FaunaListComponent>;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ FaunaFloraComponent ]
+      declarations: [ FaunaListComponent ]
     })
     .compileComponents();
   }));
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(FaunaFloraComponent);
+    fixture = TestBed.createComponent(FaunaListComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

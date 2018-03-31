@@ -5,7 +5,13 @@ Este proyecto se basa en el desarrollo de una BD NoSQL, usando para ello Firebas
 #Notas:
 
 -Framework Front-end usado: Bootstrap
+
 -Tipo de DB de Firebase usado: RealTime Database
+
+-Links de Hojas de cálculo de Drive con la que se hace sincronización (De Drive a Firebase):
+	-Tabla de Flora: `https://docs.google.com/spreadsheets/d/1UrqhIO-68ruVPRNbx606YGDPt38vS7kRACNLmIb1Tsc/edit#gid=0`
+	-Tabla de Fauna: `https://docs.google.com/spreadsheets/d/1xlElaSi0uhvnOJoWmJ4HxIVObDAvWdTPIoT01YxRBtA/edit#gid=0`
+	Nota:Todavía no se logra la sincronización al contrario (De Firebase a Drive).
 
 -----------------------------------------------------------------------------------------------------------------------------------
 
