@@ -1,6 +1,6 @@
 export class Fauna {
     $key: string;
-	foto: any;
+	foto: string;
     nombre: string;
     dieta: string;
     bioma: string;
@@ -11,4 +11,5 @@ export class Fauna {
     genero: string;
     especie: string;
     subespecie: string;
+
 }

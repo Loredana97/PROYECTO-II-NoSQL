@@ -21,10 +21,12 @@ import { FaunaListComponent } from './components/datos/fauna-list/fauna-list.com
 import { FloraListComponent } from './components/datos/flora-list/flora-list.component';
 import { FaunaComponent } from './components/datos/fauna/fauna.component';
 import { FloraComponent } from './components/datos/flora/flora.component';
+import { FotosComponent } from './components/datos/fotos/fotos.component'
 
 //Import de los Servicios (services):
 import { FaunaService } from './services/fauna.service';
 import { FloraService } from './services/flora.service';
+import { FotosService } from './services/fotos.service';
 
 //Import del Toastr:
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
@@ -39,7 +41,8 @@ import { ToastrModule } from 'ngx-toastr';
     FaunaComponent,
     FloraComponent,
     FaunaListComponent,
-    FloraListComponent
+    FloraListComponent,
+    FotosComponent
   ],
   imports: 
   [
@@ -56,7 +59,7 @@ import { ToastrModule } from 'ngx-toastr';
     //AngularFireModule.initializeApp(environment.firebase, 'angular-fs'),
     //AngularFirestoreModule
   ],
-  providers: [FaunaService, FloraService],
+  providers: [FaunaService, FloraService, FotosService],
   bootstrap: [AppComponent]
 })
 

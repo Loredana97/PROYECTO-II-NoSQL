@@ -4,8 +4,10 @@ import { NgForm } from '@angular/forms';
 //Import de Service: 
 import { FaunaService } from '../../../services/fauna.service';
 
+
 //Import de la Clase:
 import { Fauna } from '../../../models/fauna';
+
 
 //Import del toastr:
 import { ToastrService } from 'ngx-toastr';

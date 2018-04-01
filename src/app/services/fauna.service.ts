@@ -42,7 +42,6 @@ export class FaunaService
   updateFauna(fauna: Fauna)
   {
     this.faunaList.update(fauna.$key, {
-      foto: fauna.foto,
       nombre: fauna.nombre,
       dieta: fauna.dieta,
       bioma: fauna.bioma,
