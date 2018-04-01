@@ -590,6 +590,7 @@ var FotosComponent = /** @class */ (function () {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return Fauna; });
+//import { Fotos } from "./fotos";
 var Fauna = /** @class */ (function () {
     function Fauna() {
     }
